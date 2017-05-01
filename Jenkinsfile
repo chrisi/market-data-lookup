@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        sh 'redeploy-docker-image market-data-lookup -p 8383:9090'
+        sh 'redeploy-docker-image market-data-lookup -p 8383:8080'
       }
     }
     stage('Archive Artefacts') {
