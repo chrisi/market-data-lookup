@@ -8,4 +8,5 @@ import lombok.Data;
 public class Result {
   private String isin;
   private String name;
+  private String description;
 }

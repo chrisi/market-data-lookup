@@ -1,4 +1,4 @@
-package com.example;
+package com.example.dbaccess;
 
 import lombok.Data;
 
@@ -16,4 +16,7 @@ public class Instrument {
 
   @Column(name = "name")
   private String instShtNam;
+
+  @Column(name = "description")
+  private String desc;
 }
