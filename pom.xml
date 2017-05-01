@@ -58,6 +58,12 @@
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>de.codecentric</groupId>
+      <artifactId>spring-boot-admin-starter-client</artifactId>
+      <version>1.5.0</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -74,8 +80,15 @@
             <artifactId>spring-boot-maven-plugin</artifactId>
             <executions>
               <execution>
+                <id>repackage</id>
                 <goals>
                   <goal>repackage</goal>
+                </goals>
+              </execution>
+              <execution>
+                <id>build-info</id>
+                <goals>
+                  <goal>build-info</goal>
                 </goals>
               </execution>
             </executions>
