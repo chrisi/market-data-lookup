@@ -10,7 +10,7 @@
   <parent>
     <groupId>net.gtidev.maven</groupId>
     <artifactId>master</artifactId>
-    <version>1.4-SNAPSHOT</version>
+    <version>1.4</version>
   </parent>
 
   <description>Market Data Lookup</description>
