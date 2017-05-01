@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        sh 'redeploy-docker-image crypto-gui -p 8383:9090'
+        sh 'redeploy-docker-image market-data-lookup -p 8383:9090'
       }
     }
     stage('Archive Artefacts') {
